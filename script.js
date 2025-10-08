@@ -1,4 +1,6 @@
-
+$(document).ready(function () {
+	//alert('$(document).ready');
+});
 
 
 
@@ -58,14 +60,24 @@
 	//Switch light/dark
 	
 	$("#switch").on('click', function () {
+		// oscuro
 		if ($("body").hasClass("light")) {
 			$("body").removeClass("light");
 			$("#switch").removeClass("switched");
+			$('#img-logo').attr('src', 'images/logo-negativo.png');
+			$('#img-logo').hasClass("logo-image");
+			 
 		}
 		else {
+			// claro
 			$("body").addClass("light");
 			$("#switch").addClass("switched");
+			$('#img-logo').attr('src', 'images/logo.png');
+			$('#img-logo').hasClass("logo-image");
+			 
 		}
 	});          
               
 })(jQuery);
+
+ 

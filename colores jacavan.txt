@@ -1,0 +1,7 @@
+blanco 		f8eede
+azul		123b53
+naranja		d2843d
+
+fondo 1f2029
+617 79 15 56
+ 
