@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JacaVan - Alquiler de Vehiculos</title>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <!--<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>-->
     <link rel="stylesheet" href="./style.css">
 
   
@@ -38,54 +38,84 @@
         <div class="nav__content">
             <ul class="nav__list">
                 <li class="nav__list-item active-nav"><a href="#" class="hover-target">Home</a></li>
+                <li class="nav__list-item"><a href="#seccion-servicios" class="hover-target">Servicios</a></li>
+
                 <li class="nav__list-item"><a href="#seccion-flota" class="hover-target">Flota</a></li>
                 <li class="nav__list-item"><a href="#seccion-contacto" class="hover-target">Contacto</a></li>
             </ul>
         </div>
     </div>
 
-    <div class="section full-height over-hide">
-        <div class="switch-wrap">
-            <div class="slider-content">
-                <div class="content-row">
-                    <div class="content-column">
+    <section id="seccion-home" class="c-section-home">
+        <div class="c-section">
+            <div class="section full-height over-hide">
+                <div class="switch-wrap">
+                    <div class="slider-content">
+                        <div class="content-row">
+                            <div class="content-column">
 
-                        <h1 class="slide-heading">	<a href="#" class="hover-target" style="color: #f8eede"><span style="color: #d2843d">JACA</span>VAN</a> </h1>
-                        <h2 class="slide-subheading">Furgonetas | Coches | Pirineo Aragones | Jaca</h2>
-                        <h1 class="slide-heading">Alquiler de vehículos sin conductor </h1>
+                                <h1 class="slide-heading">	<a href="#" class="hover-target" style="color: #f8eede"><span style="color: #d2843d">JACA</span>VAN</a> </h1>
+                                <h2 class="slide-subheading">Furgonetas | Coches | Pirineo Aragones | Jaca</h2>
+                                <h1 class="slide-heading">Alquiler de vehículos sin conductor </h1> 
+                            </div>
+                        </div>
 
-                        <!--<div class="creative-btns--wrap">
-                            <a href="https://www.fiverr.com/s/0bj1lBk" class="creative-btn">
-                                <span class="btn-animate-y"><span class="btn-animate-y-1">Learn More</span><span class="btn-animate-y-2" aria-hidden="true">Learn More</span></span>
-                            </a>
-                            <a href="https://www.fiverr.com/s/0bj1lBk" class="creative-btn btn-fill">
-                                <span class="btn-animate-y"><span class="btn-animate-y-1">Get In Touch</span><span class="btn-animate-y-2" aria-hidden="true">Get In Touch</span></span>
-                            </a>
-                        </div>-->
+                    </div> 
+                    <div id="switch" class="hover-target">
+                        <div id="circle"></div>
                     </div>
+                    <p><span>Oscuro</span> - <span>Claro</span></p>
                 </div>
-
             </div>
 
-            <!--<h1>JacaVan</h1>
-            <h1>Alquiler de vehículos sin conductor</h1>
-            <h1>coches, furgonetas ..</h1>
-            <h1>617 79 15 56</h1>-->
-
-
-            <div id="switch" class="hover-target">
-                <div id="circle"></div>
-            </div>
-            <p><span>Oscuro</span> - <span>Claro</span></p>
+            <div class='cursor' id="cursor"></div>
+            <div class='cursor2' id="cursor2"></div>
+            <div class='cursor3' id="cursor3"></div>
         </div>
-    </div>
-
-    <div class='cursor' id="cursor"></div>
-    <div class='cursor2' id="cursor2"></div>
-    <div class='cursor3' id="cursor3"></div>
+    </section>
 
 
     <!--SERVICIOS-->
+    <section id="seccion-servicios" class="c-section-servicios" style="margin-top:30em;">
+
+        <h2 class="c-section__title"><span>Servicios</span></h2>
+        <ul class="c-services">
+            <li class="c-services__item">
+                <h3>Ofertas </h3>
+                <p>Cuanto más tiempo disfrutes de tu vehículo, más ahorras. Hemos diseñado una política de precios flexible y transparente para adaptarnos a todos los tipos de cliente, desde quienes necesitan un coche o furgoneta por unas horas hasta quienes lo requieren por semanas o meses.</p>
+            </li>
+            <li class="c-services__item">
+                <h3>Alquiler por días, semanas o por horas</h3>
+                <p>Tú decides el tiempo que necesitas la furgoneta. Ofrecemos tarifas ajustadas y sin letra pequeña, tanto para alquileres cortos como para periodos más largos.</p>
+            </li>
+            <li class="c-services__item">
+                <h3>Furgonetas de distintos tamaños</h3>
+                <p>Disponemos de modelos pequeños y medianos, ideales para transportar desde pequeños paquetes hasta cargas voluminosas. Todas nuestras furgonetas cuentan con climatizador, asistencia 24h.</p>
+            </li>
+            <li class="c-services__item">
+                <h3>Servicio local en Jaca y Pirineo Aragonés</h3>
+                <p>Nos encontramos en pleno corazón del Pirineo, lo que nos permite ofrecerte soluciones rápidas y cómodas si necesitas moverte por Jaca, Sabiñánigo, Formigal, Canfranc o alrededores.</p>
+            </li>
+            <li class="c-services__item">
+                <h3>Cómo Alquilar una Furgoneta o coche</h3>
+                <p>
+                    Alquilar con nosotros es rápido, transparente y sin complicaciones. Solo tienes que seguir estos sencillos pasos:
+                    <ul style="color:black">
+                        <li>Elige el modelo que mejor se adapte a tus necesidades.</li>
+                        <li>Consulta disponibilidad y tarifa para las fechas que te interesan.</li>
+                        <li>Reserva por teléfono, sin pagos ocultos ni cargos sorpresa.</li>
+                        <li>Recoge tu furgoneta en Jaca con toda la documentación preparada</li>
+                        <li>Devuélvela fácilmente, con la opción de ampliar el alquiler si lo necesitas.</li>
+                    </ul>
+                </p>
+            </li>
+            <li class="c-services__item">
+                <h3>Atención personalizada</h3>
+                <p>Nuestro equipo te asesora para que elijas la furgoneta que mejor se adapte a tu ruta o a tu tipo de carga. Y si lo necesitas, te ayudamos con la gestión de reservas y documentación de manera rápida y sencilla. </p>
+            </li>
+        </ul>
+    </section>
+
 
     <!--SECCION FLOTA-->
     <section id="seccion-flota" class="featured" id="featured">
@@ -156,7 +186,7 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2938.1879730600267!2d-0.553039787589143!3d42.572532543592786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5780e9563b0cd5%3A0x4047dc51697035ae!2sAv.%20de%20Francia%2C%2026%2C%2022700%20Jaca%2C%20Huesca!5e0!3m2!1ses!2ses!4v1759921090433!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
- 
+
     <!-- Footer -->
     <footer>
         <!--<div class="waves">
